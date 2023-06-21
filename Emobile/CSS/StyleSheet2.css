@@ -1,0 +1,209 @@
+﻿* {
+    box-sizing: border-box;
+}
+header {
+    background-color: #666;
+    /*background-image: url('../Images/iPapers_co - vd04-globe-in-line-art-triangle-dark-pattern.jpg');*/
+    
+    padding: 10px;
+    text-align: center;
+    /*font-size: 35px;*/
+    color: white;
+    /*opacity: 0.9;*/
+}
+
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:inherit;
+    /*padding-bottom: 40px;*/ /* Adjust the padding-bottom to match the height of the footer */
+    min-height: 100vh; /* Make sure the body covers the full viewport height */
+    display: flex;
+    flex-direction: column; /* to define the direction to lay the containers*/
+    overflow: hidden;
+}
+
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 100vh; 
+}
+
+.left {
+    width: 15%;
+    background-color: #aaa; 
+}
+
+.middle {
+    width: 70%;
+    background-color: #bbb; 
+}
+
+.right {
+    width: 15%;
+    background-color: #ccc; 
+}
+
+/* Clear floats after the columns */
+/*.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: justify-all;
+    position: fixed;
+    bottom: 0;
+    height:min-content;
+    width: 100%;
+}
+
+nav {
+    float: left;
+    width: 25%;
+    height: 100vh; 
+
+
+}
+
+/* Add the following styles to your existing CSS */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f2f2f2;
+    width: max-content;
+    padding: 10px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+}
+
+    li a {
+        text-decoration: none;
+        color: #333;
+    }
+
+.box {
+    display: inline-block;
+    width: 175px;
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 15px;
+    margin: 10px;
+
+}
+
+.signup {
+    width: 45px;
+    height: 45px;
+    background-color: #ccc;
+    border-radius: 15px;
+    margin: 10px;
+    position: fixed;
+    top: 100px;
+    right: 10px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f2f2f2;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    top: 100px;
+    right: 10px;
+}
+
+.form-group button:hover {
+        cursor: pointer;
+        box-shadow: 0 0.4rem 1.4rem 0 rgba(36, 202, 27, 0.5);
+        transform: translateY(-0.1rem);
+        transition: transform 150ms;
+    }
+
+
+
+.image-row {
+    display: flex; /* This makes the images align in a row */
+    justify-content: space-between; /* This evenly spaces the images in the row */
+    margin-bottom: 20px; /* This adds a small margin below the row */
+}
+
+    .image-row img {
+        width: 175px;
+        height: 150px;
+        background-color: #ccc;
+        border-radius: 15px;
+        margin: 10px;
+    }
+
+.image-text {
+    text-align: center;
+    font-size: smaller;
+}
+/*.button {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+*/
+.button-stack {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer_details {
+    display: flex;
+    justify-content: space-between;
+    font-size: smaller;
+    flex-direction: column;
+}
+
+    .footer_details ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: smaller;
+    }
+
+        .footer_details ul li {
+            display: inline;
+            margin-right: 10px;
+            font-size: smaller;
+        }
+
+.stack {    
+
+    display: flex;
+    flex-direction: column;
+}
+
+.stack_row{
+   
+}
